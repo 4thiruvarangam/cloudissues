@@ -1,0 +1,26 @@
+Cloud custodian Error-
+
+assert role, "Lambda function role must be specified"
+AssertionError: Lambda function role must be specified
+
+
+Add this role:
+Create Role:
+role: lambda_role_arn
+
+Create Role with basic lambda execution or add this tag
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      <your other rules>
+    },
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "lambda.amazonaws.com"
+      },
+      "Action": "sts:AssumeRole"
+    }
+  ]
+}
