@@ -1,8 +1,11 @@
 Cloud custodian Error-
 
+https://github.com/cloud-custodian/cloud-custodian/issues/63
+
+//*********
 assert role, "Lambda function role must be specified"
 AssertionError: Lambda function role must be specified
-
+//***************
 
 Add this role:
 Create Role:
