@@ -27,3 +27,17 @@ Create Role with basic lambda execution or add this tag
     }
   ]
 }
+
+
+// - valid json
+
+{
+    "Version": "2012-10-17",
+    "Statement": {
+        "Effect": "Allow",
+        "Principal": {
+            "Service": "lambda.amazonaws.com"
+        },
+        "Action": "sts:AssumeRole"
+    }
+}
